@@ -13,5 +13,4 @@ use App\Http\Controllers\EmployeeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::resource('/',EmployeeController::class);
+Route::resource('/employees',EmployeeController::class);
