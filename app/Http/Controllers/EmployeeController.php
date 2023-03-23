@@ -91,7 +91,7 @@ class EmployeeController extends Controller
 
         $employee = new Employee;
 
-        $employee = Employee::find($request->name);
+        $employee = Employee::find($request->employee_name);
         $employee->employee_place = $request->employee_place;
         $employee->employee_salary = $request->employee_salary;
         $employee->employee_office = $request->employee_office;

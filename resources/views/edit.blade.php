@@ -9,25 +9,25 @@
             <div class="row mb-3">
                 <label class="col-sm-2 col-label-form">Employee Name</label>
                 <div class="col-sm-10">
-                    <input type="text" name="name" class="form-control" value="{{ $employee->name }}" />
+                    <input type="text" name="employee_name" class="form-control" value="{{ $employee->employee_name }}" />
                 </div>
             </div>
             <div class="row mb-3">
                 <label class="col-sm-2 col-label-form">Employee Place</label>
                 <div class="col-sm-10">
-                    <input type="text" name="place" class="form-control" value="{{ $employee->place }}" />
+                    <input type="text" name="employee_place" class="form-control" value="{{ $employee->employee_place }}" />
                 </div>
             </div>
             <div class="row mb-4">
                 <label class="col-sm-2 col-label-form">Employee Salary</label>
                 <div class="col-sm-10">
-                    <input type="text" name="salary" class="form-control" value="{{ $employee->salary }}" />
+                    <input type="text" name="employee_salary" class="form-control" value="{{ $employee->employee_salary }}" />
                 </div>
             </div>
             <div class="row mb-4">
                 <label class="col-sm-2 col-label-form">Employee Office</label>
                 <div class="col-sm-10">
-                    <input type="text" name="office" class="form-control" value="{{ $employee->office }}" />
+                    <input type="text" name="employee_office" class="form-control" value="{{ $employee->employee_office }}" />
                 </div>
             </div>
             <div class="text-center">
