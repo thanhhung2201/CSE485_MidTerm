@@ -98,7 +98,7 @@ class EmployeeController extends Controller
 
         $employee->save();
         return redirect()->route('employees.index')->with('success', 'Student Data has been updated successfully.');
-
+        
     }
 
     /**
