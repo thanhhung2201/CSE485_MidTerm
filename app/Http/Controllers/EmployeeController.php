@@ -34,20 +34,20 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'employee_name'          =>  'required',
-            'employee_place'         =>  'required',
-            'employee_salary'         =>  'required',
-            'employee_office'         =>  'required',
+            'name'          =>  'required',
+            'place'         =>  'required',
+            'salary'         =>  'required',
+            'office'         =>  'required',
         ]);
 
         
 
         $employee = new Employee;
 
-        $employee->employee_name = $request->employee_name;
-        $employee->employee_place = $request->employee_place;
-        $employee->employee_salary = $request->employee_salary;
-        $employee->employee_office = $request->employee_office;
+        $employee->name = $request->name;
+        $employee->place = $request->place;
+        $employee->salary = $request->salary;
+        $employee->office = $request->office;
 
         $employee->save();
 
