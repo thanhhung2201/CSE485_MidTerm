@@ -25,10 +25,10 @@
             @if(count($data) > 0)
             @foreach($data as $row)
             <tr>
-                <td>{{ $row->name }}</td>
-                <td>{{ $row->place }}</td>
-                <td>{{ $row->salary }}</td>
-                <td>{{ $row->office }}</td>
+                <td>{{ $row->employee_name }}</td>
+                <td>{{ $row->employee_place }}</td>
+                <td>{{ $row->employee_salary }}</td>
+                <td>{{ $row->employee_office }}</td>
                 <td>
                     <form method="post" action="{{ route('employees.destroy',
 $row->name) }}">

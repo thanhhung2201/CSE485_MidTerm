@@ -13,25 +13,25 @@
         <div class="row mb-3">
             <label class="col-sm-2 col-label-form"><b>Employee Name</b></label>
             <div class="col-sm-10">
-                {{ $employee->employee_name }}
+                {{ $employee->name }}
             </div>
         </div>
         <div class="row mb-3">
             <label class="col-sm-2 col-label-form"><b>Employee Place</b></label>
             <div class="col-sm-10">
-                {{ $employee->employee_email }}
+                {{ $employee->email }}
             </div>
         </div>
         <div class="row mb-4">
             <label class="col-sm-2 col-label-form"><b>Employee Salary</b></label>
             <div class="col-sm-10">
-                {{ $employee->employee_salary }}
+                {{ $employee->salary }}
             </div>
         </div>
         <div class="row mb-4">
             <label class="col-sm-2 col-label-form"><b>Employee Office</b></label>
             <div class="col-sm-10">
-                {{ $employee->employee_office }}
+                {{ $employee->office }}
             </div>
         </div>
     </div>
