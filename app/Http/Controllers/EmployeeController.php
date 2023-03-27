@@ -91,7 +91,8 @@ class EmployeeController extends Controller
 
         $employee = new Employee;
 
-        $employee = Employee::find($request->name);
+        $employee = Employee::find($request->hidden_id);
+        $employee->name = $request->name;
         $employee->place = $request->place;
         $employee->salary = $request->salary;
         $employee->office = $request->office;

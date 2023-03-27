@@ -19,7 +19,7 @@
         <div class="row mb-3">
             <label class="col-sm-2 col-label-form"><b>Employee Place</b></label>
             <div class="col-sm-10">
-                {{ $employee->email }}
+                {{ $employee->place }}
             </div>
         </div>
         <div class="row mb-4">

@@ -30,12 +30,11 @@
                 <td>{{ $row->salary }}</td>
                 <td>{{ $row->office }}</td>
                 <td>
-                    <form method="post" action="{{ route('employees.destroy',
-$row->name) }}">
+                    <form method="post" action="{{ route('employees.destroy', $row->id) }}">
                         @csrf
                         @method('DELETE')
-                        <a href="{{ route('employees.show', $row->name) }}" class="btn btn-primary btn-sm">View</a>
-                        <a href="{{ route('employees.edit', $row->name) }}" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="{{ route('employees.show', $row->id) }}" class="btn btn-primary btn-sm">View</a>
+                        <a href="{{ route('employees.edit', $row->id) }}" class="btn btn-warning btn-sm">Edit</a>
                         <input type="submit" class="btn btn-danger btn-sm" value="Delete" />
                     </form>
                 </td>
@@ -47,7 +46,7 @@ $row->name) }}">
             </tr>
             @endif
         </table>
-        {!! $data->links() !!}
+      
     </div>
 </div>
 @endsection
